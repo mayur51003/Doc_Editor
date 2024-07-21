@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Edit your doc</title>
+</head>
+<style type="text/css">
+	.hgo {
+		font-size: 25px;
+	}
+
+	.field {
+		width: 550px;
+		border-radius: 15px;
+	}
+
+	.legend {
+		font-size: 25px;
+		width: 190px;
+
+	}
+
+	.content {
+		font-size: 20px;
+	}
+
+	/* Styling for navigation bar */
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 20px;
+		background-color: #333;
+		color: #fff;
+		height: 30px;
+		border-radius: 15px;
+	}
+
+	/* Styling for navigation links */
+	.navbar a {
+		color: #fff;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+
+	.homeseabout {
+		font-size: 17px;
+	}
+</style>
+
+<body>
+	<div class="navbar">
+		<!-- Logo or image -->
+		<h1 class="hgo">
+			<label>
+				<img src="logo-black-2.png" alt="Logo" height="40px" width="60px"></label>
+			<!-- Name or title -->
+			Edit Your Doc
+		</h1>
+		<!-- Navigation links -->
+		<div class="homeseabout">
+			<a href="./index.html">Home</a>
+			<a href="#">About</a>
+		</div>
+	</div>
+	<center>
+		<div>
+			<div>
+				<h1><label for="h1"><img src="logo-black-2.png" alt="error" width="120" height="100"></label>
+					Edit Your Doc</h1>
+			</div>
+			<br>
+			<br>
+			<fieldset class="field">
+				<legend align="center" class="legend"><b>Convert to pdf</b></legend>
+				<br>
+				<content class="content">This tool helps you to convert multiple files of more than 100 formats into pdf
+				</content>
+			</fieldset>
+		</div>
+	</center>
+	<br>
+	<div id="avepdf-container-id">
+		<div>
+		</div>
+		<script type="text/javascript" src="convert.js"></script>
+		<script type="text/javascript">
+			loadAvePDFWidget('9d746d22-10dd-413d-9133-911b10a44f44', 'auto', 'convert-to-pdf', 'avepdf-container-id');
+		</script>
+	</div>
+
+</body>
+
+</html>
